@@ -17,7 +17,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="flex items-center justify-between px-10 py-5 lg:px-20">
+      <nav className="flex items-center justify-between px-10 py-5 lg:px-44">
         <div className="block">
           <h1 className="text-2xl font-extrabold">Andrew</h1>
           <h1 className="text-2xl font-extrabold">Hilario.</h1>
