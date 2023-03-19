@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="bg-[#292929] text-white px-10 lg:px-44">
+    <div id="about" className="bg-[#292929] text-white px-10 lg:px-44">
       <div className="flex flex-col">
-        <div className="text-2xl font-extrabold relative w-full">
+        <div className="text-2xl font-extrabold w-full">
           <h1 className="text-5xl md:text-6xl lg:text-7xl py-5 font-extrabold flex items-center w-full">
             <span className="w-full md:w-[150px] lg:w-[50px] h-2 bg-white block"></span>
             <span className="mx-4">About</span>

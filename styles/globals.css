@@ -6,9 +6,13 @@
 
 @layer base{
   html{
-    @apply font-plusJakarta
+    @apply scroll-smooth;
   }
+  body{
+    @apply font-plusJakarta;
+  }
+
   h1, h2, h3, h4, h5, h6{
-    @apply font-bold
+    @apply font-bold;
   }
 }
