@@ -1,8 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_acfkhlq",
+        "template_95masph",
+        form.current,
+        "pDmfC5akb_XHTuydF"
+      )
+      .then(
+        (result) => {
+          toast.success("Successfully sent!");
+          console.log(result.text);
+        },
+        (error) => {
+          toast.error("This didn't work.");
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div id="contact" className="bg-[#292929] text-white px-10 lg:px-44">
+      <div>
+        <Toaster position="top-center" reverseOrder={false} />
+      </div>
       <div className="flex flex-col">
         <div className="text-2xl font-extrabold w-full">
           <h1 className="text-5xl md:text-6xl lg:text-7xl py-5 font-extrabold flex items-center w-full">
@@ -18,6 +47,8 @@ const Contact = () => {
             </h1>
           </div>
           <form
+            ref={form}
+            onSubmit={sendEmail}
             action=""
             className="md:w-1/3 flex flex-col gap-3 p-5 bg-white text-slate-900 rounded-lg"
           >
@@ -30,13 +61,16 @@ const Contact = () => {
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <label htmlFor="email" className="text-lg font-bold md:text-xl">
+              <label
+                htmlFor="user_name"
+                className="text-lg font-bold md:text-xl"
+              >
                 Email
               </label>
               <input
                 type="email"
-                name="email"
-                id="email"
+                name="user_name"
+                id="user_name"
                 className="border-2 border-slate-900 p-2 rounded-lg font-medium"
               />
             </div>
@@ -50,15 +84,14 @@ const Contact = () => {
                 className="border-2 border-slate-900 p-2 rounded-lg md:h-[100px] lg:h-[150px] resize-none font-medium"
               />
             </div>
-            <div className="flex flex-col gap-2">
-              <input
-                type="submit"
-                name="submit"
-                id="submit"
-                value="Send"
-                className="bg-green-600 p-2 rounded-lg font-bold text-lg text-white"
-              />
-            </div>
+
+            <input
+              type="submit"
+              name="submit"
+              id="submit"
+              value="Send"
+              className="bg-green-600 cursor-pointer p-2 rounded-lg font-bold text-lg text-white hover:bg-green-800 ease-in-out duration-300"
+            />
           </form>
         </div>
       </div>

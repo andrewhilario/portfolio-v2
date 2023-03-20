@@ -7,7 +7,7 @@ import About from '@/components/About'
 import Portfolio from '@/components/Portfolio'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
-import { motion, AnimatePresence } from 'framer-motion' 
+import { motion,  } from 'framer-motion' 
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,14 +22,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <AnimatePresence >
+      
         <Navbar />
         <Main />
         <About />
         <Portfolio />
         <Contact />
         <Footer />
-      </AnimatePresence>
+     
     </>
   )
 }

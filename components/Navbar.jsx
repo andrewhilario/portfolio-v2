@@ -104,16 +104,16 @@ const Navbar = () => {
             Let's Connect
           </h1>
           <div className="flex item-center justify-around gap-5">
-            <Link href="/">
+            <Link href="https://www.facebook.com/andrew.hilario.0412">
               <AiFillFacebook className="text-4xl font-extrabold " />
             </Link>
-            <Link href="/">
+            <Link href="https://twitter.com/ainzzs4ma">
               <AiFillTwitterCircle className="text-4xl font-extrabold " />
             </Link>
-            <Link href="/">
+            <Link href="https://www.linkedin.com/in/hilarioandrew12/">
               <AiFillLinkedin className="text-4xl font-extrabold " />
             </Link>
-            <Link href="/">
+            <Link href="https://github.com/andrewhilario/">
               <AiFillGithub className="text-4xl font-extrabold " />
             </Link>
           </div>
