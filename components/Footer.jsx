@@ -10,7 +10,7 @@ import {
 const Footer = () => {
   return (
     <div className="flex flex-col gap-5 items-center py-5">
-      <div className="flex flex-row gap-10 py-10">
+      <div className="flex flex-row gap-10 py-10 text-slate-700">
         <div className="block">
           <Link href="/">
             <BsFacebook className="text-5xl cursor-pointer" />

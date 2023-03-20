@@ -37,7 +37,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 id="email"
-                className="border-2 border-slate-900 p-2 rounded-lg"
+                className="border-2 border-slate-900 p-2 rounded-lg font-medium"
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -47,7 +47,7 @@ const Contact = () => {
               <textarea
                 name="message"
                 id="message"
-                className="border-2 border-slate-900 p-2 rounded-lg md:h-[100px] lg:h-[150px] resize-none"
+                className="border-2 border-slate-900 p-2 rounded-lg md:h-[100px] lg:h-[150px] resize-none font-medium"
               />
             </div>
             <div className="flex flex-col gap-2">

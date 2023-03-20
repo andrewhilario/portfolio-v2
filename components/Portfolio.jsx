@@ -17,6 +17,8 @@ import {
   SiCss3,
   SiJquery,
 } from "react-icons/si";
+import { motion, AnimatePresence } from "framer-motion";
+
 const Portfolio = () => {
   return (
     <div id="portfolio" className="flex flex-col px-10 md:px-32 lg:px-44">
@@ -27,10 +29,10 @@ const Portfolio = () => {
           <span className="w-full md:w-[150px] lg:w-[50px] h-2 bg-black block"></span>
         </h1>
       </div>
-      <div className="w-full flex flex-col px-10 gap-5 md:gap-[5rem] py-10">
+      <div className="w-full flex flex-col md:px-10 gap-5 md:gap-[5rem] py-10">
         {/* FoxyAnime Web */}
         <div className="w-full flex flex-col md:flex-row gap-4 md:gap-[2.5rem] md:justify-between">
-          <div className="block md:w-1/2 h-[200px] md:h-[350px] lg:h-[450px] rounded-lg shadow-lg transition ease-in duration-100 hover:border-2 hover:border-slate-700">
+          <div className="w-full block md:w-1/2 h-[200px] md:h-[350px] lg:h-[450px] rounded-lg shadow-lg transition ease-in duration-100 hover:border-2 hover:border-slate-700">
             <Image
               src="/assets/foxyanime.png"
               width={1920}
@@ -39,7 +41,7 @@ const Portfolio = () => {
               className="w-full h-full object-cover rounded-lg"
             />
           </div>
-          <div className="md:w-1/2 flex flex-col gap-4 py-4">
+          <div className="w-full md:w-1/2 flex flex-col gap-4 py-4">
             <h1 className="font-extrabold text-3xl hover:text-[#FF1616] ease-in duration-300">
               FoxyAnime.
             </h1>
