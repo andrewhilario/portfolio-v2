@@ -33,7 +33,11 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-xl font-semibold text-center">
-        Copyright © 2023 andrewhilario. All rights reserved.
+        Copyright © 2023{" "}
+        <Link href="https://andrewhilario.vercel.app/" className="">
+          andrewhilario.tech
+        </Link>
+        . All rights reserved.
       </p>
     </div>
   );
