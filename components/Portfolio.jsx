@@ -44,7 +44,7 @@ const Portfolio = () => {
             />
           </div>
           <div className='w-full md:w-1/2 flex flex-col gap-4 py-4'>
-            <h1 className='font-extrabold text-3xl hover:text-[#FF1616] ease-in duration-300'>
+            <h1 className='font-extrabold text-3xl hover:text-cyan-500 ease-in duration-300'>
               Kawaiifu.
             </h1>
             <p className='text-lg font-semibold'>
