@@ -48,7 +48,7 @@ const Portfolio = () => {
               Kawaiifu.
             </h1>
             <p className='text-lg font-semibold'>
-              FoxyAnime is a Anime Streaming Website that uses the Consumet API
+              Kawaiifu is a Anime Streaming Website that uses the Consumet API
               to get the data of the anime. You can also search for an anime and
               it will show you the details of the anime.
             </p>
