@@ -116,7 +116,7 @@ const Portfolio = () => {
               </div>
             </div>
             <div className='flex items-center gap-4'>
-              <Link href='https://possystem.herokuapp.com/'>
+              <Link href='https://pointofsales.up.railway.app/'>
                 <p className='px-6 py-2 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-700'>
                   Live
                 </p>
