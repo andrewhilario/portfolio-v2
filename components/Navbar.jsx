@@ -39,7 +39,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="https://drive.google.com/uc?export=download&id=1Igmh5G7WFxNU4EJF7ZtTw6TLEZvIzDXh">
+            <Link href="https://drive.google.com/uc?export=download&id=1ymzTOtLUzFFOi0Yov1svaRrxcpkV-jA-">
               <h1 className="font-extrabold px-4 py-2 border-2 border-slate-900 rounded-lg hover:bg-slate-700 ease-in duration-200 hover:text-white">
                 Resume
               </h1>
